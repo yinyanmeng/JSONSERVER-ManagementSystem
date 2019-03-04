@@ -1,0 +1,25 @@
+https://github.com/typicode/json-server
+
+搭建本地json文件
+
+1.npm install -g json-server
+
+2.npm init
+
+3.npm install json-server --save
+
+4.package.json内修改
+
+"scripts":{
+"json:server":"json-server --watch db.json"
+}
+
+5.db.json文件录入json数据
+
+6.启动npm run json:server
+
+7.加载
+"scripts":{
+"json:server":"json-server --watch db.json",
+"json:server:remote":"json-server http://jsonplaceholder.typicode.com/db"
+}
